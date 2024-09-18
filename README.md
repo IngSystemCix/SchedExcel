@@ -1,50 +1,56 @@
-# React + TypeScript + Vite
+# SchedExcel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# SchedExcel
 
-Currently, two official plugins are available:
+SchedExcel is a React-based application designed to help users manage and organize their schedules efficiently. With an intuitive interface and powerful features, SchedExcel makes it easy to create, edit, and view schedules in a spreadsheet-like format.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **User-friendly Interface**: Easy to navigate and use.
+- **Schedule Management**: Create, edit, and delete schedules.
+- **Spreadsheet View**: View schedules in a familiar spreadsheet format.
+- **Responsive Design**: Works on both desktop and mobile devices.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation
 
-- Configure the top-level `parserOptions` property like this:
+To install and run SchedExcel locally, follow these steps:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
+1. Clone the repository:
+
+```bash
+git clone https://github.com/IngSystemCix/SchedExcel.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. Navigate to the project directory:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react';
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-});
+```bash
+cd SchedExcel
 ```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Start the development server:
+
+```bash
+npm start
+```
+
+## Usage
+
+Once the development server is running, you can access the application in your web browser at `http://localhost:3000`.
+
+## Contributing
+
+Contributions are welcome! Please read the [contributing guidelines](CONTRIBUTING.md) for more information.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or suggestions, please open an issue or contact the project maintainer at [your-email@example.com].
