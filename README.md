@@ -1,6 +1,4 @@
-# SchedExcel
-
-# SchedExcel
+# 📅 SchedExcel
 
 SchedExcel is a React-based application designed to help users manage and organize their schedules efficiently. With an intuitive interface and powerful features, SchedExcel makes it easy to create, edit, and view schedules in a spreadsheet-like format.
 
