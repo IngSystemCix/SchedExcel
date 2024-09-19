@@ -1,33 +1,34 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
 import './App.css';
+import { Dropzone } from './component/dropzone';
+import { UnderlineSelect } from './component/underlineSelect';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+      <div className="w-full flex justify-center items-center mb-20 text-white font-bold gap-10 px-10">
+        <UnderlineSelect
+          options={[
+            { value: 'ICS', label: 'ICS' },
+            { value: 'XMLNS', label: 'XMLNS' },
+          ]}
+          title="File"
+        />
+        <span className="text-green-500">To</span>
+        <UnderlineSelect
+          options={[
+            { value: 'XMLNS', label: 'XMLNS' },
+            { value: 'ICS', label: 'ICS' },
+          ]}
+          title="File"
+        />
+        <button
+          type="button"
+          className="text-white focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-green-800"
+        >
+          Convertir
         </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Dropzone />
     </>
   );
 }
