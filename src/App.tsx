@@ -1,4 +1,3 @@
-import './App.css';
 import { Dropzone } from './component/dropzone';
 import { UnderlineSelect } from './component/underlineSelect';
 
