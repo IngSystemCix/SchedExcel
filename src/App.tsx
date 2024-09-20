@@ -1,9 +1,10 @@
+import { HashRouter as Router } from 'react-router-dom';
 import { Dropzone } from './component/dropzone';
 import { UnderlineSelect } from './component/underlineSelect';
 
 function App() {
   return (
-    <>
+    <Router>
       <div className="w-full flex justify-center items-center mb-20 text-white font-bold gap-10 px-10">
         <UnderlineSelect
           options={[
@@ -28,7 +29,7 @@ function App() {
         </button>
       </div>
       <Dropzone />
-    </>
+    </Router>
   );
 }
 
