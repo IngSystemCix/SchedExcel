@@ -10,9 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "format": "prettier --write .",
-    "prepare": "husky install",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "prepare": "husky install"
   },
   "dependencies": {
     "exceljs": "^4.4.0",
@@ -29,7 +27,6 @@
     "eslint": "^9.9.0",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.9",
-    "gh-pages": "^6.1.1",
     "globals": "^15.9.0",
     "husky": "^8.0.0",
     "lint-staged": "^15.2.10",
